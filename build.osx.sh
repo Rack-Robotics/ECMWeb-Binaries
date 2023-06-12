@@ -23,7 +23,7 @@ if [ -d $LW_DIR ]; then
 fi
 
 
-git clone https://github.com/Laserweb/LaserWeb4.git $LW_DIR
+git clone https://github.com/Rottschaferanders/LaserWeb4.git $LW_DIR
 cd $LW_DIR
 git checkout $TARGET_UI_BRANCH
 yarn

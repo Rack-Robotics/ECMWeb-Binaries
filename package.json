@@ -9,18 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Laserweb/LaserWeb-binaries.git"
+    "url": "git+https://github.com/Rottschaferanders/LaserWeb-binaries.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LaserWeb/LaserWeb-binaries/issues"
+    "url": "https://github.com/Rottschaferanders/LaserWeb-binaries/issues"
   },
   "homepage": "https://github.com/LaserWeb/LaserWeb-binaries#readme",
   "dependencies": {
     "electron-updater": "^2.21.10",
-    "lw.comm-server": "github:LaserWeb/lw.comm-server",
-    "ncp": "^2.0.0"
+    "lw.comm-server": "github:Rottschaferanders/lw.comm-server",
+    "ncp": "^2.0.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "copyfiles": "^1.2.0",

@@ -25,7 +25,7 @@ IF EXIST %LW_DIR% (
     rd /s /q  %LW_DIR%
 )
 
-git clone https://github.com/Laserweb/LaserWeb4.git %LW_DIR%
+git clone https://github.com/Rottschaferanders/LaserWeb4.git %LW_DIR%
 cd %LW_DIR%
 git checkout %TARGET_UI_BRANCH%
 CALL yarn
@@ -36,7 +36,7 @@ CALL npm run installdev
 ::xcopy /s /f /y ..\LaserWeb\overrides\LaserWeb4 .
 
 :: Save Git log to Env variable
-git log --pretty=format:"[%%h](https://github.com/Laserweb/LaserWeb4/commit/%%H)%%x09%%an%%x09%%ad%%x09%%s" --date=short -10 > git.log.output
+git log --pretty=format:"[%%h](https://github.com/Rottschaferanders/LaserWeb4/commit/%%H)%%x09%%an%%x09%%ad%%x09%%s" --date=short -10 > git.log.output
 set /p GIT_LOGS=<git.log.output
 
 git describe --abbrev=0 --tags > ui_version.output
