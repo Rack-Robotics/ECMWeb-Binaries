@@ -1,7 +1,7 @@
 {
   "name": "laserweb-builder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Builds laserweb",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
@@ -16,18 +16,19 @@
   "bugs": {
     "url": "https://github.com/Rottschaferanders/LaserWeb-binaries/issues"
   },
-  "homepage": "https://github.com/LaserWeb/LaserWeb-binaries#readme",
+  "homepage": "https://github.com/Rottschaferanders/LaserWeb-binaries#readme",
   "dependencies": {
     "electron-updater": "^2.21.10",
     "lw.comm-server": "github:Rottschaferanders/lw.comm-server",
     "ncp": "^2.0.0",
-    "yarn": "^1.22.19"
+    "yarn": "^1.22.19",
+    "serialport": "^9.2.8"
   },
   "devDependencies": {
     "copyfiles": "^1.2.0",
     "electron": "^1.6.x",
     "electron-builder": "^14.1.1",
-    "electron-rebuild": "^1.5.7",
+    "electron-rebuild": "^2.3.5",
     "ncp": "^2.0.0"
   },
   "build": {
