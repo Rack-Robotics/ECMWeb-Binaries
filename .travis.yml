@@ -5,7 +5,7 @@ os:
   
 language: node_js
 node_js:
-  - "7"
+  - "14"
 
 addons:
   apt:
@@ -16,7 +16,7 @@ addons:
 
 # Limit branches to prevent double builds
 branches:
-  only: master
+  only: [master]
   
 # Speed up build using cache
 cache: yarn

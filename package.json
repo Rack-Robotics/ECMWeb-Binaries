@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "start": "./node_modules/.bin/electron ."
   },
+  "postinstall": "electron-rebuild",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rottschaferanders/LaserWeb-binaries.git"
@@ -18,18 +19,21 @@
   },
   "homepage": "https://github.com/Rottschaferanders/LaserWeb-binaries#readme",
   "dependencies": {
+    "axios": "^1.4.0",
+    "electron-download-tf": "^4.3.4",
     "electron-updater": "^2.21.10",
     "lw.comm-server": "github:Rottschaferanders/lw.comm-server",
     "ncp": "^2.0.0",
-    "yarn": "^1.22.19",
-    "serialport": "^9.2.8"
+    "node-hid": "^2.1.2",
+    "serialport": "^11.0.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
+    "@electron/rebuild": "^3.2.13",
     "copyfiles": "^1.2.0",
-    "electron": "^1.6.x",
-    "electron-builder": "^14.1.1",
-    "electron-rebuild": "^2.3.5",
-    "ncp": "^2.0.0"
+    "electron": "^25.1.1",
+    "electron-builder": "^14.5.3",
+    "node-gyp": "^9.4.0"
   },
   "build": {
     "appId": "xyz.laserweb",

@@ -2,7 +2,7 @@
 #
 # build.sh
 #
-# Builds OSX distribution of LaserWeb
+# Updates all LaserWeb
 #
 
 # Set target branch
@@ -19,9 +19,12 @@ cd ../
 
 # Download LaserWeb UI / install modules
 if [ -d $LW_DIR ]; then
-  rm -rf $LW_DIR
+#   rm -rf $LW_DIR
+    echo "Laserweb4 exists in the parent directory. Remove $LW_DIR and try again." 
+    exit 1
 fi
 
+echo "dsfafasddas"
 
 git clone https://github.com/Rottschaferanders/LaserWeb4.git $LW_DIR
 cd $LW_DIR
@@ -40,10 +43,13 @@ export SERVER_VERSION=$(cat ./node_modules/lw.comm-server/version.txt)
 # Bundle LaserWeb app using webpack
 npm run bundle-dev
 cd ../$CURRENT_DIR
-git tag -f $UI_VERSION-$SERVER_VERSION
+# git tag -f $UI_VERSION-$SERVER_VERSION
 # Overwrite app with latest version
 
-
+yarn
+yarn upgrade
+npm update lw.comm-server
+npm install
 
 rm -rf ./node_modules/lw.comm-server/app/
 cp -Rf ../$LW_DIR/dist ./node_modules/lw.comm-server/app/
@@ -54,7 +60,7 @@ echo "BUILDING Laserweb $UI_VERSION-$SERVER_VERSION"
 
 # Copy web front-end + build server component
 
-# ./node_modules/.bin/electron-rebuild
+./node_modules/.bin/electron-rebuild
 # ./node_modules/.bin/asar
 ./node_modules/.bin/build --em.version=$UI_VERSION-$SERVER_VERSION -p never
 # ./node_modules/.bin/build --linux --em.version=$UI_VERSION-$SERVER_VERSION -p never
