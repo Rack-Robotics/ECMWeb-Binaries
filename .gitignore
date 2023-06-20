@@ -2,3 +2,4 @@ node_modules
 app
 dist
 out/
+gcode_files/
