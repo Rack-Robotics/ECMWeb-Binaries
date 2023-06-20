@@ -5,6 +5,11 @@ const electron = require('electron');
 const axios = require('axios');
 
 const { app, BrowserWindow } = electron;
+
+// This is for Squirrel. Windows and it does some initialization that needs to be done one windows.
+if (require('electron-squirrel-startup')) app.quit();
+
+
 let mainWindow;
 
 const webServer = new nstatic.Server(config.uipath || path.join(__dirname, '/app'));
