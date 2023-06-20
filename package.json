@@ -1,7 +1,7 @@
 {
-  "name": "laserweb-builder",
+  "name": "edm-web",
   "version": "1.0.0",
-  "description": "Builds laserweb",
+  "description": "Builds EDMWeb",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/Rottschaferanders/LaserWeb-binaries.git"
   },
-  "author": "",
+  "author": "Anders Rottschafer",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Rottschaferanders/LaserWeb-binaries/issues"
@@ -44,8 +44,8 @@
     "node-gyp": "^9.4.0"
   },
   "build": {
-    "appId": "xyz.laserweb",
-    "productName": "LaserWeb",
+    "appId": "xyz.edmweb",
+    "productName": "EDMWeb",
     "asar": true,
     "files": [
       "**/*"
@@ -76,6 +76,8 @@
   },
   "keywords": [
     "laserweb",
+    "rackrobotics",
+    "edmweb",
     "cncweb",
     "grbl",
     "smoothieware",
