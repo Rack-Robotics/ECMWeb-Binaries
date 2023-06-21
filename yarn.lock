@@ -2345,7 +2345,7 @@ ltcdr@^2.2.1:
 
 "lw.comm-server@github:Rottschaferanders/lw.comm-server":
   version "4.1.0"
-  resolved "https://codeload.github.com/Rottschaferanders/lw.comm-server/tar.gz/4b5df8a7db2d448e0815af4881c64093199ddde3"
+  resolved "https://codeload.github.com/Rottschaferanders/lw.comm-server/tar.gz/41b9b1d4ddfedadc6151fa3a6864feb7150c65dd"
   dependencies:
     chalk "4.x"
     dotenv "10.x"

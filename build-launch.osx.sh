@@ -54,7 +54,7 @@ echo $UI_VERSION-$SERVER_VERSION>./node_modules/lw.comm-server/app/VERSION
 
 echo "BUILDING Laserweb $UI_VERSION-$SERVER_VERSION"
 
-yarn run make
+yarn run start
 
 # Copy web front-end + build server component
 
