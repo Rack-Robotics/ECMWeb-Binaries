@@ -1476,7 +1476,7 @@ esprima@^4.0.0:
 
 "ew.comm-server@github:Rack-Robotics/ew.comm-server":
   version "4.1.0"
-  resolved "https://codeload.github.com/Rack-Robotics/ew.comm-server/tar.gz/e63d9626721cfc0af4608b795e7121b5d9d94a48"
+  resolved "https://codeload.github.com/Rack-Robotics/ew.comm-server/tar.gz/d0af3705c476e14ffa98ab42cfb78dd43a8162dc"
   dependencies:
     chalk "4.x"
     dotenv "10.x"
