@@ -1,4 +1,4 @@
-const config = require('lw.comm-server/config.js');
+const config = require('ew.comm-server/config.js');
 const { createServer } = require('http');
 const nstatic = require('node-static');
 const electron = require('electron');
@@ -86,8 +86,8 @@ app.on('activate', () => {
 // // -----------------------
 // const axios = require('axios');
 
-// const config = require('lw.comm-server/config.js');
-// require('lw.comm-server');
+// const config = require('ew.comm-server/config.js');
+// require('ew.comm-server');
 
 
 // // Electron app

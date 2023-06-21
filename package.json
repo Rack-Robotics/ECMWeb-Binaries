@@ -12,20 +12,20 @@
   "postinstall": "electron-rebuild",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rottschaferanders/LaserWeb-binaries.git"
+    "url": "git+https://github.com/Rack-Robotics/EDMWeb-binaries.git"
   },
   "author": "Anders Rottschafer",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rottschaferanders/LaserWeb-binaries/issues"
+    "url": "https://github.com/Rack-Robotics/EDMWeb-binaries/issues"
   },
-  "homepage": "https://github.com/Rottschaferanders/LaserWeb-binaries#readme",
+  "homepage": "https://github.com/Rack-Robotics/EDMWeb-binaries#readme",
   "dependencies": {
     "axios": "^1.4.0",
     "electron-download-tf": "^4.3.4",
     "electron-squirrel-startup": "^1.0.0",
     "electron-updater": "^2.21.10",
-    "lw.comm-server": "github:Rottschaferanders/lw.comm-server",
+    "ew.comm-server": "github:Rack-Robotics/ew.comm-server",
     "ncp": "^2.0.0",
     "node-hid": "^2.1.2",
     "serialport": "^11.0.0",

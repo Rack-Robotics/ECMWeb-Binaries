@@ -25,7 +25,7 @@ IF EXIST %LW_DIR% (
     rd /s /q  %LW_DIR%
 )
 
-git clone https://github.com/Rottschaferanders/LaserWeb4.git %LW_DIR%
+git clone https://github.com/Rack-Robotics/EDMWeb.git %LW_DIR%
 cd %LW_DIR%
 git checkout %TARGET_UI_BRANCH%
 CALL yarn
@@ -36,12 +36,12 @@ CALL npm run installdev
 ::xcopy /s /f /y ..\LaserWeb\overrides\LaserWeb4 .
 
 :: Save Git log to Env variable
-git log --pretty=format:"[%%h](https://github.com/Rottschaferanders/LaserWeb4/commit/%%H)%%x09%%an%%x09%%ad%%x09%%s" --date=short -10 > git.log.output
+git log --pretty=format:"[%%h](https://github.com/Rack-Robotics/EDMWeb/commit/%%H)%%x09%%an%%x09%%ad%%x09%%s" --date=short -10 > git.log.output
 set /p GIT_LOGS=<git.log.output
 
 git describe --abbrev=0 --tags > ui_version.output
 set /p UI_VERSION=<ui_version.output
-set /p SERVER_VERSION=<node_modules\lw.comm-server\version.txt
+set /p SERVER_VERSION=<node_modules\ew.comm-server\version.txt
 
 :: Bundle LaserWeb app using webpack
 CALL npm run bundle-dev
@@ -54,9 +54,9 @@ cd ..\Laserweb4-Binaries
 ::git tag -f %UI_VERSION%-%SERVER_VERSION%
 set LW_DIST=..\%LW_DIR%\dist
 set LW_VERSION=%UI_VERSION:~1%-%SERVER_VERSION:~-3%
-xcopy /i /y "%LW_DIST%" .\node_modules\lw.comm-server\app
+xcopy /i /y "%LW_DIST%" .\node_modules\ew.comm-server\app
 
-echo %LW_VERSION%>.\node_modules\lw.comm-server\app\VERSION
+echo %LW_VERSION%>.\node_modules\ew.comm-server\app\VERSION
 
 echo "LaserWeb4 %LW_VERSION%"
 

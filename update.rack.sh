@@ -26,7 +26,7 @@ fi
 
 echo "dsfafasddas"
 
-git clone https://github.com/Rottschaferanders/LaserWeb4.git $LW_DIR
+git clone https://github.com/Rack-Robotics/EDMWeb.git $LW_DIR
 cd $LW_DIR
 git checkout $TARGET_UI_BRANCH
 # nvm install v10.16.3
@@ -36,8 +36,8 @@ npm run installdev
 
 # export UI_VERSION=$(git describe --abbrev=0 --tags)
 export UI_VERSION="1.0.0"
-# export SERVER_VERSION=$(cat ./node_modules/lw.comm-server/version.txt | cut -c 3-6)
-export SERVER_VERSION=$(cat ./node_modules/lw.comm-server/version.txt)
+# export SERVER_VERSION=$(cat ./node_modules/ew.comm-server/version.txt | cut -c 3-6)
+export SERVER_VERSION=$(cat ./node_modules/ew.comm-server/version.txt)
 
 
 # Bundle LaserWeb app using webpack
@@ -48,13 +48,13 @@ cd ../$CURRENT_DIR
 
 yarn
 yarn upgrade
-npm update lw.comm-server
+npm update ew.comm-server
 npm install
 
-rm -rf ./node_modules/lw.comm-server/app/
-cp -Rf ../$LW_DIR/dist ./node_modules/lw.comm-server/app/
+rm -rf ./node_modules/ew.comm-server/app/
+cp -Rf ../$LW_DIR/dist ./node_modules/ew.comm-server/app/
 
-echo $UI_VERSION-$SERVER_VERSION>./node_modules/lw.comm-server/app/VERSION
+echo $UI_VERSION-$SERVER_VERSION>./node_modules/ew.comm-server/app/VERSION
 
 echo "BUILDING Laserweb $UI_VERSION-$SERVER_VERSION"
 

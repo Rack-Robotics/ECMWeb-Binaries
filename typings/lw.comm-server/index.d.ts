@@ -1,1 +1,1 @@
-declare module 'lw.comm-server';
+declare module 'ew.comm-server';
