@@ -25,7 +25,7 @@
     "electron-download-tf": "^4.3.4",
     "electron-squirrel-startup": "^1.0.0",
     "electron-updater": "^2.21.10",
-    "ew.comm-server": "github:Rack-Robotics/ew.comm-server",
+    "ew.comm-server": "git+https://github.com/Rack-Robotics/ew.comm-server.git",
     "ncp": "^2.0.0",
     "node-hid": "^2.1.2",
     "serialport": "^11.0.0",
