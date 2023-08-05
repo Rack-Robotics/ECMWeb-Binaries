@@ -1,12 +1,9 @@
-# LaserWeb4-Binaries
-Installers for LaserWeb4
+# EDMWeb-Binaries
+Installers for EDMWeb
 
-Windows Users: Download exe from https://github.com/Rack-Robotics/EDMWeb-Binaries/releases
+Windows Users: Download exe from https://github.com/Rack-Robotics/EDMWeb-Binaries/releases/download/v1.0.0/EDMWeb-1.0.0.Setup.exe
 
-Mac Users: Download dmg from https://github.com/Rack-Robotics/EDMWeb-Binaries/releases/tag/untagged-4818330b6baa8213d4a7
+Mac Users: Download zip from https://github.com/Rack-Robotics/EDMWeb-Binaries/releases/download/v1.0.0/EDMWeb-darwin-x64-1.0.0.zip
 
-Linux Users: Download AppImage from https://github.com/Rack-Robotics/EDMWeb-Binaries/releases/tag/untagged-4818330b6baa8213d4a7
+Linux Users: Not available yet.
 
-# Documentation
-
-Head over to [https://laserweb.yurl.ch/](https://laserweb.yurl.ch/)
